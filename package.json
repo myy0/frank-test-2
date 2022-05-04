@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/myy0/frank-test-1/issues"
   },
-  "homepage": "https://github.com/myy0/frank-test-1#readme"
+  "homepage": "https://github.com/myy0/frank-test-1#readme",
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.1"
+  }
 }
