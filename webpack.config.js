@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {  //要导出的对象是这个对象,node.js的模块定义，必须这么写
   mode: 'production', //模式是生产模式
   entry: {        //entry是整个程序的入口是哪里
@@ -16,5 +17,12 @@ module.exports = {  //要导出的对象是这个对象,node.js的模块定义�
         loader: 'awesome-typescript-loader'
       }
     ]
-  }     
+  }, 
+  plugins: [
+      new HtmlWebpackPlugin({    //生成新的htmlHtmlWebpackPlugin配置
+          title: 'FUI',
+          template: 'index.html'  //原来的html是什么
+        
+      })
+  ]    
 }
